@@ -85,12 +85,12 @@ function TechCard({ tech, added, onAdd }) {
 
       <span className={`badge badge-${tech.badge.toLowerCase().replace(/[^a-z]+/g, '-')}`}>{tech.badge}</span></div>
 
-    {/* <h3>{tech.name}</h3><p className="tech-description">{tech.description}</p> */}
+    <h3>{tech.name}</h3><p className="tech-description">{tech.description}</p>
 
     <div className="card-meta"><span className="category-chip">{tech.category}</span><span className="difficulty">{tech.difficulty}</span><span className="rating">
     <Star size={12} fill="currentColor" />{tech.rating.toFixed(1)}</span></div>
 
-    <button className={`add-button ${added ? 'added-button' : ''}`} onClick={() => onAdd(tech)} disabled={added}>{added ? '✓ Added to Stack' : 'Add to Stack'}</button>
+    {/* <button className={`add-button ${added ? 'added-button' : ''}`} onClick={() => onAdd(tech)} disabled={added}>{added ? '✓ Added to Stack' : 'Add to Stack'}</button> */}
 
   </article>
 
