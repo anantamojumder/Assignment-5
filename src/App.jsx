@@ -178,7 +178,7 @@ const filtered = filter === 'All'
     <section className="technology-section container" id="technologies">
       <div className="section-heading"><div><h2>Explore the <span className="gradient-text">Technologies</span>
 
-      {/* </h2><p>Pick technologies to build your ideal stack.</p></div><span className="available-count"></span></div> */}
+      </h2><p>Pick technologies to build your ideal stack.</p></div><span className="available-count"></span></div>
       
       <div className="content-layout"><div className="technology-grid">
         {loading ? <div className="loading-state"><span className="spinner" />Loading technologies…</div> : loadError ? <div className="error-state">{loadError}</div> : 
