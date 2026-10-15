@@ -3,7 +3,6 @@ import logo from './assets/logo-text.png';
 import { useEffect, useState } from 'react'
 import { Menu, X, ArrowRight, Layers3, Code2, Star } from 'lucide-react'
 import { ToastContainer, toast } from 'react-toastify'
-fetch(`${import.meta.env.BASE_URL}technologies.json`)
 
 const GRADIENT = 'linear-gradient(105deg, #ff641f 0%, #ed238a 53%, #8c35e8 100%)'
 
