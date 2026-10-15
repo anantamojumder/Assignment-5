@@ -90,7 +90,7 @@ function TechCard({ tech, added, onAdd }) {
     <div className="card-meta"><span className="category-chip">{tech.category}</span><span className="difficulty">{tech.difficulty}</span><span className="rating">
     <Star size={12} fill="currentColor" />{tech.rating.toFixed(1)}</span></div>
 
-    {/* <button className={`add-button ${added ? 'added-button' : ''}`} onClick={() => onAdd(tech)} disabled={added}>{added ? '✓ Added to Stack' : 'Add to Stack'}</button> */}
+    <button className={`add-button ${added ? 'added-button' : ''}`} onClick={() => onAdd(tech)} disabled={added}>{added ? '✓ Added to Stack' : 'Add to Stack'}</button>
 
   </article>
 
@@ -102,7 +102,7 @@ function StackPanel({ stack, onRemove, onClear }) {
     <div className="stack-heading"><div><h3>Your Stack</h3><p>{stack.length} {stack.length === 1 ? 'Technology' : 'Technologies'} Selected</p></div>
     <span className="stack-count">{stack.length}</span></div>
     {stack.length === 0 ? <div className="empty-stack"><div className="empty-icon"><Layers3 size={24} /></div><strong>Your stack is empty</strong>
-    <p>Add technologies from the list to start building your ideal development stack.</p>
+    {/* <p>Add technologies from the list to start building your ideal development stack.</p> */}
     </div> :
 
     <div className="stack-items">{stack.map(item => <div className="stack-item" key={item.id}><img src={item.icon} alt="" onError={e => { e.currentTarget.style.visibility = 'hidden' }} />
