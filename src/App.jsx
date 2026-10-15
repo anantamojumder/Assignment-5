@@ -55,7 +55,7 @@ function Hero() {
   return <section className="hero container" id="home">
     <div className="hero-copy">
 
-      {/* <h1>Build Your Ideal<br /><span className="gradient-text">Development Stack</span></h1> */}
+      <h1>Build Your Ideal<br /><span className="gradient-text">Development Stack</span></h1>
 
       <p className="hero-description">Explore frontend, backend, database, and tooling options, compare them side by side, and put together the stack that fits your next project.</p>
 
@@ -85,7 +85,7 @@ function TechCard({ tech, added, onAdd }) {
 
       <span className={`badge badge-${tech.badge.toLowerCase().replace(/[^a-z]+/g, '-')}`}>{tech.badge}</span></div>
 
-    <h3>{tech.name}</h3><p className="tech-description">{tech.description}</p>
+    {/* <h3>{tech.name}</h3><p className="tech-description">{tech.description}</p> */}
 
     <div className="card-meta"><span className="category-chip">{tech.category}</span><span className="difficulty">{tech.difficulty}</span><span className="rating">
     <Star size={12} fill="currentColor" />{tech.rating.toFixed(1)}</span></div>
