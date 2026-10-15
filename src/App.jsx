@@ -102,7 +102,7 @@ function StackPanel({ stack, onRemove, onClear }) {
     <div className="stack-heading"><div><h3>Your Stack</h3><p>{stack.length} {stack.length === 1 ? 'Technology' : 'Technologies'} Selected</p></div>
     <span className="stack-count">{stack.length}</span></div>
     {stack.length === 0 ? <div className="empty-stack"><div className="empty-icon"><Layers3 size={24} /></div><strong>Your stack is empty</strong>
-    {/* <p>Add technologies from the list to start building your ideal development stack.</p> */}
+    <p>Add technologies from the list to start building your ideal development stack.</p>
     </div> :
 
     <div className="stack-items">{stack.map(item => <div className="stack-item" key={item.id}><img src={item.icon} alt="" onError={e => { e.currentTarget.style.visibility = 'hidden' }} />
